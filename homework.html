@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BMI計算器</title>
+    <link rel="stylesheet" href="library/css/bootstrap.css">
+    <script src="library/js/jquery-2.2.4.js"></script>
+    <script src="library/js/bootstrap.js"></script>
+
+
+    <style media="screen">
+      #weight{
+        padding-right: 40px;
+      }
+      #About{
+        margin-left: 1000px;
+      }
+      .bg-dark {
+    background-color: #343a40 !important;
+      }
+      #height{
+
+      }
+      label{
+        margin-left: 10px;
+      }
+      #sub{
+        margin-left: 20px;
+      }
+    </style>
+    <script type="text/javascript">
+
+      $(function(){
+
+
+      $('#sub').click(function(){
+        var h=$('#height').val();
+        var w=$('#weight').val();
+        var bmi= w/(h*h);
+        var age=$('#age').val();
+          if(h==''){
+              alert("請輸入身高");
+          }else if (w=='') {
+              alert("請輸入體重");
+          }else if(age==''){
+              alert("請輸入年齡");
+          }
+          else{
+          $('#cal').val(formatFloat(bmi,3));
+          $('#weight').val('');
+          $('#weight').val('');
+        }
+
+        var sexvalue=$('#inputGroupSelect01 option:selected').val();
+        console.log(sexvalue);
+        var bodyvalue=(1.2*bmi)+(0.23*age-5.4)-(10.8*sexvalue)
+        $('#cal2').val(formatFloat(bodyvalue,3));
+        $('#age').val('');
+
+        });
+      });
+
+  /*    $('#sub2').click(function(){
+        var h=$('#height').val();
+        var w=$('#weight').val();
+        var bmi= w/(h*h);
+        var age=$('#age').val();
+        if($('#inputGroupSelect01 option:selected').val()==1){
+          alert("請輸入身高");
+          var sexvalue=1;
+
+        }else{
+          var sexvalue=0;
+        }
+
+        var bodyvalue=(1.2*bmi)+(0.23*age-5.4)-(10.8*sexvalue)
+        $('#cal2').val(formatFloat(bodyvalue,3));
+        $('#age').val('');
+      });
+*/
+      function formatFloat(num, pos) {
+        var size = Math.pow(10, pos);
+        return Math.round(num * size) / size;
+      }
+
+    </script>
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+      <a class="navbar-brand" href="#">BMI計算器</a>
+
+      <a class="navbar-brand" id="About" href="http://hahow.in" target="_blank">about</a>
+
+    </nav>
+  </div>
+
+  <div class="col-md-12">
+    <h3>公式</h3>
+    <p>體脂率 = (1.2 * BMI) + (0.23 * 年齡 - 5.4) - (10.8 * 性別)
+      * 其中男性性別取值為 1，女性取值為 0。
+      * BMI = 體重 (kg) / 身高2 (m2)
+    </p>
+  </div>
+
+  <div class="row">
+
+          <div class="col-md-3 box">
+            <form class="form-inline my-2 my-lg-0">
+              <label for="height">身高</label>
+              <input class="form-control mr-sm-2" type="search" id="height" placeholder="身高" aria-label="Search">
+
+            </form>
+          </div>
+            <div class="col-md-3 box">
+              <form class="form-inline my-2 my-lg-0">
+                <label for="weight">體重</label>
+                <input class="form-control mr-sm-2" id="weight" type="search" placeholder="體重" aria-label="Search">
+
+              </form>
+            </div>
+
+            <div class="col-md-3 box">
+              <form class="form-inline my-2 my-lg-0">
+                <label for="height">年齡</label>
+                <input class="form-control mr-sm-2" type="search" id="age" placeholder="年齡" aria-label="Search">
+
+              </form>
+            </div>
+            <div class="col-md-3 box">
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">性別</label>
+                  </div>
+                  <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>選擇</option>
+                    <option value="1">男</option>
+                    <option value="2">女</option>
+                    <option value="3">其他</option>
+                  </select>
+              </div>
+            </div>
+
+
+  </div>
+  <div class="row">
+
+
+              <div class="col-md-3 box">
+                <button class="navbar-toggler" id="sub" type="button" >提交</button>
+              </div>
+
+              <div class="col-md-3 box">
+                <form class="form-inline my-2 my-lg-0">
+                  <label for="height">體脂率結果</label>
+                  <input class="form-control mr-sm-2" type="search"  id="cal2" placeholder="體脂率結果" aria-label="Search" readonly>
+                </form>
+              </div>
+              <div class="col-md-3 box">
+                <form class="form-inline my-2 my-lg-0">
+                  <label for="height">BMI結果</label>
+                  <input class="form-control mr-sm-2" type="search"  id="cal" placeholder="BMI結果" aria-label="Search" readonly>
+                </form>
+              </div>
+
+  </div>
+
+
+
+  </body>
+</html>
