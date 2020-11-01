@@ -11,8 +11,32 @@
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/game_t01.json", {onProgress: UnityProgress});
     </script>
+    <style>
+        nav{
+            background-color: black;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 10px;
+        }
+    </style>
   </head>
   <body>
+     <nav>
+      <a href="1012-1.html">P1</a>
+      <a href="1012-2.html">P2</a>
+      <a href="1012-3.html">P3</a>
+      <a href="1012-4.html">P4</a>
+      <a href="1012-5.html">P5</a>
+
+  </nav>
     <div class="webgl-content">
       <div id="gameContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
