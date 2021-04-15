@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+    <!-- 連結用的css擺在最下面 -->
+    <script src="https://kit.fontawesome.com/ff355081e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="fixed-top">
+            <div class="container">
+                <!-- 透過檢查，找出把不要的樣式給槓掉 -->
+                <nav class="navbar navbar-expand-xl navbar-light ">
+                    <a class="navbar-brand" href="#">
+                        <!-- <img src="./Avengers-Emblem.png" width="65" height="55" alt=""> -->
+                        <a href="https://www.facebook.com/MarvelStudioTaiwan"><img src="./facebook (1).png" alt=""></a>
+                        <img src="./iconfinder_icon-04_2515843.png" alt="">
+                        <img src="./iconfinder_Rounded_Pinterest2_svg_5282545.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                       
+                        <!-- <li class="nav-item">
+                          <a class="nav-link" href="#">首頁</a>
+                        </li> -->
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#second">預告片</a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              關鍵角色
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#second3">索爾</a>
+                              <a class="dropdown-item" href="#second3">蜘蛛人</a>
+                              <a class="dropdown-item" href="#second3">黑豹</a>
+                              <a class="dropdown-item" href="#second3">奇異博士</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">其他（暫時沒有）</a>
+                            </div>
+                          </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                獨立電影</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#second4">索爾</a>
+                                <a class="dropdown-item" href="#second4">蜘蛛人</a>
+                                <a class="dropdown-item" href="#second4">黑豹</a>
+                                <a class="dropdown-item" href="#second4">奇異博士</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">其他（暫時沒有）</a>
+                              </div>
+                        </li> -->
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">桌布下載區</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="rank.html">戰力表</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">聯絡我</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="draw.html">塗鴉區</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="backstage.html">後台</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  <!-- </nav> -->
+            </div>
+        </div>   
+    </header>
+<!-- picture -->
+<section id="picture">
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="text-center">
+                    <h2 style="color: white;">畫下你心目的英雄模樣吧</h2>
+                </div>
+                <div><button class="btn" style="margin-left:20px;">儲存圖片</button></div>
+                <div>
+                <canvas id="draw" width="800" height="800"></canvas>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-6 text-left">
+               <h4>連結</h4>
+               <ul>
+                   <li><a href="FinalHome.html">主頁</a></li>
+                   <li><a href="https://www.netflix.com/">Netfliex</a></li>
+               </ul>
+               <ul>
+                    <li><a href="https://hboasia.com/HBO/zh-tw">HBO</a></li>
+                    <li><a href="https://www.apple.com/tw/tv/">AppleTV</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>聯絡我</h4>
+                <ul>
+                    <li><a href="mailto:s3785066@gmail.com">s3785066@gmail.com</a></li>
+                    <li><a href="tel:0921527968">打電話給我請點這，0921527968</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    const canvas = document.querySelector('#draw');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    ctx.strokeStyle = '#BADA55';
+    ctx.lineJoin = 'round'; //round為圓弧。
+    ctx.lineCap = 'round'; //round為圓弧。
+    ctx.lineWidth = 30;
+    
+    let isDrawing = false; //一開始先定義為false
+    let lastX = 0;//繪畫起始位置
+    let lastY = 0;//繪畫起始位置
+    let hue = 0;//設定顏色參數
+    let direction = true //設定軌跡反轉參數
+    
+    function draw(e){
+      if (!isDrawing) return;
+      ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;//更改顏色。
+      ctx.beginPath();
+      ctx.moveTo(lastX, lastY);
+      ctx.lineTo(e.offsetX, e.offsetY); //畫到的位置。
+      ctx.stroke();
+      [lastX, lastY] = [e.offsetX, e.offsetY];
+    
+      hue++;
+      if (hue >= 360){
+          hue = 0;
+      }
+    
+    //   if (ctx.lineWidth >=100 || ctx.lineWidth <= 1){
+    //       direction = !direction;
+    //   }
+    
+    //   if (direction){
+    //       ctx.lineWidth++
+    //   }else{
+    //       ctx.lineWidth--
+    //   }
+    }
+    
+    canvas.addEventListener('mousedown', (e)=> {
+      isDrawing = true;
+      [lastX, lastY] = [e.offsetX, e.offsetY];
+    }); //開始繪圖]
+    canvas.addEventListener('mousemove', draw);//繪製圖片中
+    canvas.addEventListener('mouseup', () => isDrawing = false);//完成繪圖
+    canvas.addEventListener('mouseout', () => isDrawing = false);//取消繪圖
+</script>
+</body>
+</html>
