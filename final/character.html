@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style2.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./final.html">阿賦個人小站</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse  " id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./homepage.html">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./comment.html">電影推薦</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./character.html">角色一覽表</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./backstage.html" tabindex="-1" aria-disabled="true">後台區</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">聯絡我</a>
+              </li>
+            </ul>
+          
+          </div>
+        </div>
+    </nav>
+
+
+<header>
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col">
+                <h2>角色一覽表</h2>
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('MainHero')"> 主要英雄</button>
+                    <button class="btn" onclick="filterSelection('Support')"> 綠葉英雄</button>
+                    <button class="btn" onclick="filterSelection('BadGuy')"> 大反派</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Portfolio -->
+<div class="container ">
+    <div class="row">
+        <div class="column MainHero">
+            <div class="content">
+            <img src="asset/thordarkworld.jpg" alt="Mountains" style="width:100%">
+            <h4>雷神索爾</h4>
+            <button class="more" data-toggle="modal" data-target="#mymodal">點我看更多</button>
+            <p>阿斯嘉的國王</p>
+            
+            </div>
+        </div>
+        <div class="column MainHero">
+            <div class="content">
+            <img src="asset/ironman1.jpg" alt="Lights" style="width:100%">
+            <h4>鋼鐵人</h4>
+            <button class="more" data-toggle="modal" data-target="#mymodal1">點我看更多</button>
+            <p>愛你三千次</p>
+            </div>
+        </div>
+        <div class="column MainHero">
+            <div class="content">
+            <img src="asset/CaptainAmerica1.jpg" alt="Nature" style="width:100%">
+            <h4>美國隊長</h4>
+            <button class="more" data-toggle="modal" data-target="#mymodal2">點我看更多</button>
+            <p>我可以跟你耗整天</p>
+            </div>
+        </div>
+
+        <div class="column Support">
+            <div class="content">
+            <img src="asset/BlackPather1.jpg" alt="Car" style="width:100%">
+            <h4>黑豹</h4>
+            <button class="more" data-toggle="modal" data-target="#mymodal3">點我看更多</button>
+            <p>瓦甘達萬歲</p>
+            </div>
+        </div>
+        <div class="column Support">
+            <div class="content">
+            <img src="asset/DoctorStrange1.jpg" alt="Car" style="width:100%">
+            <h4>奇異博士</h4>
+            <button class="more" data-toggle="modal" data-target="#mymodal4">點我看更多</button>
+            <p>前醫生，現任巫師</p>
+            </div>
+        </div>
+        <div class="column Support">
+            <div class="content">
+            <img src="asset/captainmarvel.jpg" alt="Car" style="width:100%">
+            <h4>驚奇隊長</h4>
+            <button class="more" data-toggle="modal" data-target="#mymodal5">點我看更多</button>
+            <p>宇宙最強飛行員</p>
+            </div>
+        </div>
+
+        <div class="column BadGuy">
+            <div class="content">
+            <img src="asset/loki1.jpg" alt="People" style="width:100%">
+            <h4>洛基</h4>
+            <button class="more" data-toggle="modal" data-target="#mymodal6">點我看更多</button>
+            <p>惡作劇之神</p>
+            </div>
+        </div>
+        <div class="column BadGuy">
+            <div class="content">
+            <img src="asset/ultron1.jpg" alt="People" style="width:100%">
+            <h4>奧創</h4>
+            <button class="more" data-toggle="modal" data-target="#mymodal7">點我看更多</button>
+            <p>毀滅人類的超級AI</p>
+            </div>
+        </div>
+        <div class="column BadGuy">
+            <div class="content">
+            <img src="asset/thanos1.jpg" alt="People" style="width:100%">
+            <h4>薩諾斯</h4>
+            <button class="more" data-toggle="modal" data-target="#mymodal8">點我看更多</button>
+            <p>漫威宇宙大魔王</p>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Modal -->
+    <div class="modal" id="mymodal" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">索爾小檔案</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                <p>雷神索爾的原形為北歐神話中的索爾，是「戰神」奧丁之子。</p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+        </div>
+        </div>
+    </div>
+    <!-- 2 -->
+    <div class="modal" id="mymodal1" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">鋼鐵人小檔案</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <p>和愛情長跑10年的螢幕情侶，養育一女</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- 3-->
+    <div class="modal" id="mymodal2" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">美國隊長小檔案</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <p>超過七十歲還能上天下地的超級士兵阿公</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 4-->
+    <div class="modal" id="mymodal3" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">黑豹小檔案</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <p>打敗金錢豹，成為統治瓦甘達的國王</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- 5-->
+    <div class="modal" id="mymodal4" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">奇異博士小檔案</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <p>瘋狂的魔術師，住在紐約</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- 6-->
+    <div class="modal" id="mymodal5" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">驚奇隊長小檔案</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <p>飛行員，然後因為事故變成超級英雄</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- 7-->
+    <div class="modal" id="mymodal6" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">洛基小檔案</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <p>阿斯嘉的二王子，與哥哥爭奪王位</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- 8-->
+    <div class="modal" id="mymodal7" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">奧創小檔案</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <p>鋼鐵人開發的超級AI，結果演算出毀滅人類的結果</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- 9-->
+    <div class="modal" id="mymodal8" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">薩諾斯小檔案</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <p>毀天滅地的大壞蛋</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+        </div>
+    </div>
+<!-- 這個DIV是給上面的container -->
+</div>
+
+ <!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container-fiuid text-center ">
+        <p class="m-0 text-white">Copyright &copy; 阿賦的個人網站<br>Phone:123456789</p>
+        <a href="mailto:a1063329@mail.nuk.edu.tw">a1063329@mail.nuk.edu.tw</a>
+    </div>
+    
+</footer>
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</body>
+</html>

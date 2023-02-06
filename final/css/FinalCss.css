@@ -1,0 +1,67 @@
+h1,h2,h3,h4,h5,p,a,input,span,ul,li,textarea{
+    font-family: 'Noto Sans TC','snas-serif';
+
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    /* background-color: gray; */
+    /* 漸層色： 切的方向；顏色；趴數；漸變；漸變%數；上下置中、左右置中；寬、高*/
+    /* 多重背景設定 */
+    /* background: linear-gradient(115deg, rgb(224, 224, 224) 50%, transparent 60%) center center /100% 100%,
+                url(./復聯四.jpg) right center / auto 100% */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 40%, transparent 60%) center center /100% 100%,
+                url(../asset/復聯四.jpg) right center / auto 100%
+}
+.container{
+    /* width: 1200px; */
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    margin: auto;
+}
+.banner-txt{
+    height: 100%;
+    display: flex;
+    /* 把它變成直向 */
+    flex-direction: column;
+    justify-content: center;
+    /* 分隔線 */
+    border-bottom: 1px solid olive;
+    align-items: start;
+}
+.banner-txt h1{
+    font-size: 70px;
+    border-bottom: 1px white;
+    font-weight: 500;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    color: white;
+}    
+.banner-txt small{
+    /* inline元素變block */
+    display: block;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.banner-txt h2{
+    font-size: 50px;
+    font-weight: 200;
+}
+.banner-txt p{
+    font-size: 30px;
+    font-weight: 200;
+}
+.banner-txt .btn{
+    background:purple;
+    color: white;
+    text-align:center;
+    transition: 0.5s;
+}
+.banner-txt .btn:hover{
+    transform: rotate(-360deg);
+    background-color: #fa0;
+    border-radius: 20%;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- 行動裝置支援 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>網站後台儀表板</title>
+    <link href="css/sidebar.css" rel="stylesheet">
+    <!-- 新加的 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+    <!-- 連結用的css擺在最下面 -->
+    <script src="https://kit.fontawesome.com/ff355081e2.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+    <style>
+      .glyphicon{
+        margin-right:10px;
+      }
+      .page-header{
+        margin:0;
+      }
+      #table{
+        margin-left:20px;
+        margin-right:15px;
+      }
+      .page-header{
+          margin-left:20px;
+      }
+      .row{
+        margin-left: 20px;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+        <!-- Sidebar -->
+  <div id="wrapper">
+
+    <div id="sidebar-wrapper">
+      <nav>
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    網站後台儀表板
+                </a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-bell fa-fw" aria-hidden="true"></i>主儀表板</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-bell fa-fw" aria-hidden="true"></i>使用者管理</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-bell fa-fw" aria-hidden="true"></i>文章管理</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-bell fa-fw" aria-hidden="true"></i>意見管理</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-bell fa-fw" aria-hidden="true"></i>網站設定</a>
+            </li>
+            <li>
+                <a href="homepage.html"><span class="glyphicon glyphicon-log-in"></span>登出</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- /#sidebar-wrapper -->
+    <div class="">
+      <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
+      </ol>
+      </nav>
+    </div>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="page-header">
+            <h2><small>最近登入紀錄</small></h2>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>登入帳號</th>
+              <th>瀏覽器</th>
+              <th>IP</th>
+              <th>登入時間</th>
+              <th>狀態</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>admin</td>
+              <td>Chrome</td>
+              <td>192.169.1.1</td>
+              <td>2021/6/18</td>
+              <td><button type="button" class="btn btn-danger">可疑</button></td>
+            </tr>
+            <tr>
+              <td>001</td>
+              <td>admin</td>
+              <td>Chrome</td>
+              <td>192.169.1.1</td>
+              <td>2021/6/18</td>
+              <td><button type="button" class="btn btn-danger">可疑</button></td>
+            </tr>
+            <tr>
+              <td>001</td>
+              <td>admin</td>
+              <td>Chrome</td>
+              <td>192.169.1.1</td>
+              <td>2021/6/18</td>
+              <td><button type="button" class="btn btn-danger">可疑</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="page-header">
+            <h2><small>近七天訪客流量</small></h2>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <canvas id="myChart" width="700" height="400"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script>
+      var data = [
+      {"Time": "2021–06–01 00:00", "Volume": 1523},
+      {"Time": "2021–06–01 05:00", "Volume": 1010},
+      {"Time": "2021–06–01 10:00", "Volume": 1106},
+      {"Time": "2021–06–01 15:00", "Volume": 1312},
+      
+    ];
+      var ctx = document.getElementById('myChart').getContext('2d');
+      var chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: data.map(x=>x.Time.slice(11,16)),
+        datasets: [{
+          label: '訪客溜量',
+          data: data.map(x=>x.Volume),
+          // 美化的部分
+          lineTension: 0,
+        }]
+      },
+      options: {
+        responsive: false    
+      }
+  });
+  $(document).ready(function(){
+    alert("你已進入後台區!!!")
+  })
+  </script>
+  </body>
+</html>

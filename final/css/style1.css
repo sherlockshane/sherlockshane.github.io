@@ -1,0 +1,212 @@
+h1,h2,h3,h4,h5,p{
+    font-family: 'Noto Sans TC','snas-serif';
+
+}
+.btn{
+width: 150px;
+background-color: #fa0;
+color: white;
+}
+.navbar-nav{
+padding:0 10px;
+margin-right: 100px;
+}
+nav a:hover{
+background: #e09e50;
+transition: 1s;
+}
+
+h1{
+text-align: center;
+padding-top: 40px;
+/* text-shadow: 6px 6px 0px rgba(0,0,0,0.2); */
+}
+.container-fluid img{
+width: 100%;
+}
+#intro .container-fluid{
+background: url("../asset/endgame1.png") no-repeat center center/cover;
+width: 100%;
+/* vertical-align: bottom; */
+color:white;
+line-height: 1.5;
+padding: 200px 200px;
+}
+
+a{
+text-decoration: none;
+}
+
+
+.footer{
+text-align: center;
+background: #ebebeb;
+color: black;
+padding: 10 0px;
+}
+.footer a{
+text-decoration: none;
+color:#e09e50 ;
+} 
+.page-section {
+    padding: 6rem 0;
+    
+    /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+}
+/* portfolio */
+#portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
+    max-width: 1920px;
+  }
+  #portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box {
+    position: relative;
+    display: block;
+  }
+  #portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(244, 98, 58, 0.9);
+    transition: opacity 0.25s ease;
+    text-align: center;
+  }
+  #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+  }
+
+#News{
+    margin:auto;
+}
+.item{
+    /* width: 368px; */
+    width: 320px;
+    margin: 15px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    border: 1px solid lightgray;
+    transform: translateY(0px);
+    transition: .5s;
+}
+/* @media screen and (max-width:768px) {
+    .item{
+        width: 160px;
+
+} */
+
+.item .text{
+    padding: 20px;
+    position: relative;
+}
+.item img{
+    width: 100%;
+    height: 50%;
+    vertical-align: middle;
+}
+
+.item:hover{
+    /* 碰到會移動 */
+    transform: translateY(-50px);
+}
+.item:hover .text:before{
+    border-right: 159px solid gold;
+    border-left:  159px solid gold;
+}
+.item:hover h2{
+    color: white;
+    border-bottom-color: white;
+    transition: .5s;
+}
+/* .item p{
+    line-height: 1.5;
+    font-weight: 100;
+    transition: .5s;
+} */
+.item .btn{
+    border: 2px solid slategrey;
+    width: 100px;
+    font-size: 14px;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+
+}
+.item:hover .text{
+    /* 漸層變化 */
+    background-image:linear-gradient(0deg, orange,gold) ;
+}
+.item:hover .text .btn{
+    /* 漸層變化 */
+    background-image:linear-gradient(0deg, orange,gold) ;
+}
+/* @media screen and (min-width:576px) { */
+.item .text:before{
+    /* 圖片的切版 */
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 0;
+    top: 0;
+    border-top: 50px solid transparent;
+    border-right: 159px solid white;
+    border-left:  159px solid white;
+    /* 顛倒 */
+    transform: translateY(-100%);
+    }
+/* } */
+
+.item h2{
+    border-bottom: 1px solid grey;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.5;
+    font-weight: 100;
+    transition: .5s;
+}
+.item p{
+    font-size: 16px;
+}
+/* @media screen and (max-width:480px)  {
+    .item{
+        width: 100%;
+    }
+    .item .text:before{
+        border-right: 172px solid white;
+        border-left:  172px solid white;
+    }
+    .item:hover .text:before{
+        
+        border-right: 172px solid gold;
+        border-left:  172px solid gold;
+    }
+    
+} */
+#marvel{
+    /* background-color: #dc3545; */
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    padding-bottom: 50px;
+    
+}
+#marvel img{
+    width: 80%;
+    border-radius: 10%;
+    padding: 20px;
+    box-shadow:-3px -3px 9px black;
+}
+
+#marvel button {
+    border-radius: 10%;
+    border:white;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+}
+    #marvel p{
+    display: none;
+}
